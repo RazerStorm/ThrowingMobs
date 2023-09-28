@@ -17,6 +17,9 @@ public final class ThrowingMobs extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         saveDefaultConfig();
+
+        new Metrics(this, 19917);
+
         Bukkit.getPluginManager().registerEvents(this, this);
         Bukkit.getScheduler().runTaskTimer(this, () -> {
             Bukkit.getOnlinePlayers().forEach(player -> {
