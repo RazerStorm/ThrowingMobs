@@ -1,0 +1,4 @@
+name: ThrowingMobs
+version: '${version}'
+main: be.razerstorm.throwingmobs.ThrowingMobs
+api-version: '1.20'
